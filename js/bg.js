@@ -18,7 +18,6 @@ var loader = new THREE.GLTFLoader();
 loader.load( 'js/scene.glb', function ( gltf ) {
   const root = gltf.scene;
   scene.add( gltf.scene );
-  console.log(dumpObject(root).join('\n'));
 }, undefined, function ( error ) {
   console.error( error );
 } );
