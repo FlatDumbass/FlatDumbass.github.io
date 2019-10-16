@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>FlatDumbass - NE_UMEU</title>
+        <link rel='stylesheet' href='/css/style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id='page'>
+            <div id='content_wrap'>
+                <div id='cover'>
+                        <div id='d3_cover'><canvas id=canvas></canvas></div>
+                        <div id='image_cover'>
+                    </div>
+                </div>
+                <div id='description'>
+                     <a href="media/NE_UMEU(2019).zip"><div id='download' onclick=''>Download</div></a>
+                     <div id='descr_text' style="display: inline-block;">"NE_UMEU. Soundtrack of your life" by FlatDumbass. <br>#electonic #mashup #trash #punk #idunnolol </div>
+                </div>
+                <div id='player_wrap'>
+                    <div id='player'>
+                        <div id="panel" class="player">
+                            <div id='buttons'>
+                                <button id='play' play=true onclick='playPause()' class="player">
+                                <button id='prev' onclick='prevTrack()' class="player">
+                                <button id='next' onclick='nextTrack()' class="player">
+                            </div>
+                            <div id='progress_bar' class="player">                      
+                                    <div id='buffered'></div>
+                                    <div id='progress'></div>
+                                    <div id='time' class="player">
+                                            <div id='curTime'>00:00</div>
+                                            <div id='totalTime'>/ 00:00</div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div id='track_list'></div>
+                    </div>
+                </div>
+                <script src="js/scr.js"></script>
+                <div id='footer'>
+                    <div id="share">
+                        <div>Share-or-Die: </div>
+                        <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                        <script src="https://yastatic.net/share2/share.js" async="async"></script>
+                        <div class="ya-share2" data-services="vkontakte,facebook,twitter,tumblr,whatsapp,telegram" data-lang="en" data-image="img/cover.png" data-title="NE_UMEU. Soundtrack of your life." data-description="NE_UMEU. Soundtrack of your life by FlatDumbass. #electonic #mashup #trash #punk #idunnolol"></div>
+                        <link rel='stylesheet' href='/css/share.css'>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <a href="https://vk.com"><div id='vk_page'>VK public page</div></a>
+                    <span style="position: absolute; top: 30%; right: 0;">Mashup by FlatDumbass. 2019</span>
+                </div>
+    <!-- Yandex.Metrika counter -->
+                <script type="text/javascript" >
+                    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+                
+                    ym(55261837, "init", {
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                </script>
+                <noscript><div><img src="https://mc.yandex.ru/watch/55261837" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+            </div>
+        </div>
+    </body>
+</html>

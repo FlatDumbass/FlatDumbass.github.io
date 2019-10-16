@@ -1,0 +1,42 @@
+@media screen and (max-width:400px){
+    .ya-share2__icon, .ya-share2__container_size_m .ya-share2__icon
+    {
+        width: 5vmax;
+        height: 5vmax;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:700px){
+    .ya-share2__icon, .ya-share2__container_size_m .ya-share2__icon
+    {
+        width: 3.5vmax;
+        height: 3.5vmax;
+    }
+
+}
+
+@media screen and (min-width:700px){
+    .ya-share2__icon, .ya-share2__container_size_m .ya-share2__icon
+    {
+        width: 2.5vmax;
+        height: 2.5vmax;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 750px) and (orientation: portrait)
+{
+    .ya-share2__icon, .ya-share2__container_size_m .ya-share2__icon
+    {
+        width: 5.5vmax;
+        height: 5.5vmax;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 750px) and (orientation: landscape)
+{
+    .ya-share2__icon, .ya-share2__container_size_m .ya-share2__icon
+    {
+        width: 4.5vmax;
+        height: 4.5vmax;
+    }
+}
