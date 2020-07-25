@@ -1,50 +1,56 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset='UTF-8'>
         <title>FlatDumbass - NE_UMEU</title>
         <meta name="Title" content="FlatDumbass - NE_UMEU"/>
         <meta name="Description" content="NE_UMEU. Soundtrack of your life - sound collage album by FlatDumbass."/>
         <meta name="Keywords" content="NE_UMEU, Soundtrack of your life, FlatDumbass, sound collage, electronic, mashup, trash, punk, idunnolol"/>
-        <link rel='stylesheet' href='/css/style.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="Fd0yFP8zeeHo0l8_TsI6IZ_R3ympd3xPPciNfu3fcI4" />
         <meta name="yandex-verification" content="6463e66bc2c827c7" />
+
+        <link rel="preload" href='/css/style.css' as="style">
+        <link rel="preload" href='/css/share.css' as="style">
+        <link rel="preload" href='/js/scr.js' as="script">
+        <link rel='stylesheet' href='/css/style.css'>
+
+        
     </head>
     <body>
-        <div id='page'>
-            <div id='content_wrap'>
-                <div id='cover'>
-                        <div id='d3_cover'><canvas id=canvas></canvas></div>
-                        <div id='image_cover'>
+        <div class='page'>
+            <div class='d3_cover'><canvas id=canvas></canvas></div>
+            <div class='content_wrap'>
+                <div class='cover'>
+                        <div class='image_cover'>
                     </div>
                 </div>
-                <div id='description'>
-                     <a href="https://github.com/FlatDumbass/ne_umeu_2019/archive/master.zip"><div id='download'>Download</div></a>
-                     <div id='descr_text' style="display: inline-block;">"NE_UMEU. Soundtrack of your life" by FlatDumbass. <br>#soundcollage #electronic #mashup #trash #punk #idunnolol </div>
+                <div class='description'>
+                     <a href="https://github.com/FlatDumbass/ne_umeu_2019/archive/master.zip" aria-label="Download album (zip archive)" class="download_url"><div class='download'>Download</div></a>
+                     <div class='descr_text' style="display: inline-block;">"NE_UMEU. Soundtrack of your life" by FlatDumbass. <br>#soundcollage #electronic #mashup #trash #punk #idunnolol </div>
                 </div>
-                <div id='player_wrap'>
-                    <div id='player'>
-                        <div id="panel" class="player">
-                            <div id='buttons'>
-                                <button id='play' play=true onclick='playPause()' class="player">
-                                <button id='prev' onclick='prevTrack()' class="player">
-                                <button id='next' onclick='nextTrack()' class="player">
+                <div class='player_wrap'>
+                    <div class='player'>
+                        <div class="panel">
+                            <div class='buttons'>
+                                <div data-play=true onclick='playPause()' class="player_button play" aria-label="Play / Pause"></div>
+                                <div onclick='prevTrack()' class="player_button prev" aria-label="Previous track"></div>
+                                <div onclick='nextTrack()' class="player_button next" aria-label="Next track"></div>
                             </div>
-                            <div id='progress_bar' class="player">                      
-                                    <div id='buffered'></div>
-                                    <div id='progress'></div>
-                                    <div id='time' class="player">
-                                            <div id='curTime'>00:00</div>
-                                            <div id='totalTime'>/ 00:00</div>
+                            <div class="progress_bar">                      
+                                    <div class='buffered'></div>
+                                    <div class='progress'></div>
+                                    <div class="time">
+                                            <div class='curTime'>00:00</div>
+                                            <div class='totalTime'>/ 00:00</div>
                                         </div>
                             </div>
                         </div>
-                        <div id='track_list'></div>
+                        <div class='track_list'></div>
                     </div>
                 </div>
-                <script src="js/scr.js"></script>
-                <div id='footer'>
-                    <div id="share">
+                <div class='footer'>
+                    <div class="share">
                         <div>Share-or-Die: </div>
                         <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
                         <script src="https://yastatic.net/share2/share.js" async="async"></script>
@@ -52,10 +58,11 @@
                         <link rel='stylesheet' href='/css/share.css'>
                     </div>
                 </div>
-                <div style="position: relative;">
-                    <a href="https://vk.com/flatdumbass"><div id='vk_page'>VK public page</div></a>
+                <div class="footer_bottom">
+                    <a href="https://vk.com/flatdumbass" class="public_url"><div class='vk_page'>VK public page</div></a>
                     <span style="position: absolute; top: 30%; right: 0;">Sound collage by FlatDumbass. 2019</span>
                 </div>
+                <script src="js/scr.js"></script>
     <!-- Yandex.Metrika counter -->
                 <script type="text/javascript" >
                     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
